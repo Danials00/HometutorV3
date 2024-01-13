@@ -7,6 +7,7 @@ import { CheckPrivateRoute, PrivateRoute } from './private-route';
 
 
 const Login = lazy(() => import('../PAGES/login/index'));
+const Home = lazy(()=> import('../PAGES/home/index'));
 
 function MainRouter() {
     return (
@@ -27,6 +28,12 @@ function MainRouter() {
                 
               }
             />
+            <Route
+              path='/home'
+              element={
+                <Home />
+              }
+/>           
         </Routes>
     </ScrollToTop>
 </Suspense>

@@ -37,7 +37,6 @@ const SocialLogin = () => {
     justifyContent="center"
     alignItems="center"
 
-
     >
       <Grid item xs={2} sm={2} md={1} xl={2}
       >
@@ -78,3 +77,5 @@ const SocialLogin = () => {
   );
 };
 export default memo(SocialLogin);
+
+
