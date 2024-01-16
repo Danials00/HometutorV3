@@ -47,6 +47,9 @@ export default function ThemeManager(props: any) {
     shape: {
       borderRadius: 10,
     },
+    typography:{
+      fontFamily: 'Outfit'
+    }
   });
 
   return (

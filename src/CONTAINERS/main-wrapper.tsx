@@ -3,25 +3,26 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import React, { memo, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 // import DeviceDetect from './device-detect';
-import { useLocation, useParams } from 'react-router-dom';
+//import { useLocation, useParams } from 'react-router-dom';
 // import { axios_user } from '../PAGES/user/axios';
 import { handleIsAutoTheme, handleIsDarkTheme } from '../REDUX/reducer_app';
 
 import {
   getIsAutoTheme,
   getIsDarkTheme,
-  getUserToken,
+//  getUserToken,
 } from '../SERVICES/sessions';
 
 import SnackbarMessage from './snackbar-message';
 
-const userToken: string | boolean = getUserToken();
+//const userToken: string | boolean = getUserToken();
 
 const InitialRendering = () => {
-  const params: any = useParams();
+  //const params: any = useParams();
   const dispatch = useDispatch();
-  const { user, app } = useSelector((state: any) => state);
-  const socketRef: any = React.useRef();
+  //const { user, app } = useSelector((state: any) => state);
+  const { user} = useSelector((state: any) => state);
+  //const socketRef: any = React.useRef();
 
   React.useLayoutEffect(() => {
     const isAutoTheme = getIsAutoTheme();
@@ -42,7 +43,7 @@ const InitialRendering = () => {
   }, [user.req_session_time]);
 
   const getUserData = async () => {
-    const token: string | boolean | undefined = getUserToken();
+    //const token: string | boolean | undefined = getUserToken();
 
     // if (token) {
     //   handleSnackbar({ open: false });
@@ -116,8 +117,8 @@ const ThemeAutoSystem = () => {
 
 const MainLayout = ({ children }: any) => {
   const redux = useSelector((state: any) => state);
-  const location = useLocation();
-  const dispatch = useDispatch();
+  // const location = useLocation();
+  // const dispatch = useDispatch();
 
   useEffect(() => {
     document.body.classList.add(

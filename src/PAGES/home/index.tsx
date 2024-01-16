@@ -23,6 +23,7 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import CardMedia from '@mui/material/CardMedia';
 import Link from '@mui/material/Link';
+import Chip from '@mui/material/Chip';
 
 import Classroom_icon from '../../ASSETS/Courses_Icon/Classroom_icon.jpg';
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
@@ -33,6 +34,8 @@ import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import GroupsIcon from '@mui/icons-material/Groups';
 import TableChartIcon from '@mui/icons-material/TableChart';
+import Image_progress from '../../ASSETS/Image_progress.png';
+import Image_testskill from '../../ASSETS/Image_testskill.png';
 
 
 const homepages = () => {
@@ -116,6 +119,10 @@ const homepages = () => {
     setValue(newValue);
   };
 
+  const handleClick =() => {
+    console.info('You clicked the chip')
+  }
+
   return (
     <div className='body'>
      <Appbar />
@@ -154,17 +161,18 @@ const homepages = () => {
        style={{
         margin:0,
         //padding:0,
-        width:"1700px",
+        maxWidth:"100%",
+        width:"100%",
         height:"815px",
         // overflowY: "scroll",
         borderRadius: "0px",
         backgroundColor:"#66B2FF",
        }}>
         <Box
-        style={{
+        sx={{
         alignContent:'center',
         alignItems:'center',
-        marginLeft:'470px',
+        // marginLeft: { xs: '300px', sm:'320px'},
         marginTop:'60px'
         }}
         >
@@ -174,8 +182,7 @@ const homepages = () => {
         fontSize:'40px',
         fontWeight:900,
         color:'#FFF',
-        alignContent:'center',
-        alignItems:'center',
+        textAlign:'center'
        }}>
 
         Let's Start Learning. Explore Now!
@@ -188,7 +195,7 @@ const homepages = () => {
             justifyContent:'center',
             alignItems:'center',
             marginTop:'0px',
-            marginLeft:'-150px',
+            marginLeft:'autopx',
             //marginRight:'auto',
             
             '& > :not(style)': {
@@ -294,7 +301,7 @@ const homepages = () => {
             justifyContent:'center',
             alignItems: 'center',
             marginTop:'40px',
-            marginLeft:'-150px',
+            marginLeft:'auto',
             //marginRight:'auto',
             '& > :not(style)': {
               m: 4,
@@ -394,25 +401,24 @@ const homepages = () => {
         </Box>
         <Box 
         sx={{
-          width: "1700px",
+          width: "100%",
+          maxWidth: "100%",
           height: " 400px",
           backgroundColor:"#F8F8F8",
           alignContent:'center',
+          alignItems:'center',
         }}
         >
       <Typography
         style={{
-        fontFamily:"Outfit",
         fontSize:'30px',
         fontWeight:900,
         color:'#000',
         position: 'relative',
-        alignContent:'center',
-        alignItems:'center',
         top:'100px',
-        marginLeft:'350px'
+        textAlign:'center',
+        
        }}>
-s
         Not sure where to begin? What is your main goal on Xcelearn? 
        </Typography>
          <Box
@@ -422,7 +428,7 @@ s
             justifyContent:'center',
             alignItems: 'center',
             marginTop:'150px',
-            marginLeft:'-190px',
+            //marginLeft:'-190px',
             
             //marginRight:'auto',
             '& > :not(style)': {
@@ -482,20 +488,13 @@ s
             </Paper>
               </Box>
           </Box>
-          <Box
-             sx={{
-              width: "1700px",
-              height: " 1280px",
-              backgroundColor:"#F8F8F8",
-              alignContent:'center',
-              //marginLeft:'300'
-             }}
-          >
+
               <Box 
                sx={{ 
                 width: '100%', 
                 bgcolor: '#FFF',
-                marginLeft:'-100px',
+                alignContent:"center",
+                alignItems:"center",
                 borderBottom:1,
                 borderColor: 'divider',
                  }}
@@ -514,16 +513,15 @@ s
                      display: 'flex',
                      flexWrap: 'wrap',
                      justifyContent:'center',
-                     alignItems: 'center',
-         
-                     marginLeft:'-190px',
+                     alignItems: 'center', 
                      backgroundColor:'#FFF',
-            
+                     height:'500px',
+                     position: 'relative',
                     //marginRight:'auto',
                     '& > :not(style)': {
                      m: 4,
-                     width: 300,
-                     height: 400,
+                     width: 238,
+                     height: 332,
                   },
                     }} 
                       >
@@ -532,26 +530,159 @@ s
                       <CardcoursesMath/>
                       <CardcoursesEng/>
               </Box>
-              <Box
-                  sx={{
-                    textAlign:"center",
-                    paddingTop:"5%",
-                    justifyContent:"center",
-                    alignItems:'center',
-                    backgroundColor:'#FFF',
+              <Grid
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent:'center',
+                alignItems: 'center',
+                //marginTop:'5px',
+                marginLeft:'auto',
+                bgcolor:"#FFF",
+                 }}
+                 >
+                <Button 
+                    variant="outlined"
+                    size="small"
+                    
+                style={{
+                    marginTop:'auto',
+                    width:"275px",
+                    height:"52px",
+                    backgroundColor:"#F8F8F8",
+                    color:"#000000", 
+                    borderColor:"#C6C6C6",
+                    whiteSpace:"nowrap", 
+                    position:"relative",
+                    bottom: '30px',
                     
                   }}
-              >
-                <Typography
-                style={{
-                  fontFamily:'Outfit',
-                  fontSize:'200px',
-                }}
-                >
-                Advance in Study. Learn in demand skills
-                </Typography>
+                  >Explore More
+                    </Button>
+                  </Grid>
+          <Grid
+             sx={{
+              width:"100%",
+              maxWidth:"100%",
+              height:"1500px",
+              justifyContent:"center",
+              alignItems:"center",
+              bgcolor:"#FFF",
+              //marginTop: "20px",
+              // padding: "20px",
+              
+             }}>
+              <Typography  
+               sx={{
+                fontSize:'30px',
+                fontWeight:900,
+                textAlign:'center',
+                margin:'auto',
+                
+               }}
+               >
+                Advance in study. Learn in demand skills
+              </Typography>
+              <Typography  
+               sx={{
+                fontSize:'30px',
+                fontWeight:300,
+                textAlign:'center',
+                margin:'auto',
+               }}
+               >
+                Up skills in design,management,Health and safety
+              </Typography>
+              <Box
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent:'center',
+                alignItems: 'center',
+                marginTop:'40px',
+                marginLeft:'auto',
+              }}
+                    >
+
+                <Stack spacing={1} alignItems="center">
+                 <Stack direction="row" spacing={1}>
+                  <Chip label="Bahasa Melayu" onClick={handleClick} size="medium"/>
+                  <Chip label="Kemahiran" onClick={handleClick} size="medium" /> 
+                  <Chip label="Bertutur" onClick={handleClick} size="medium"/> 
+                  <Chip label="Coding" onClick={handleClick} size="medium"/> 
+                  <Chip label="Lukisan" onClick={handleClick} size="medium"/> 
+                </Stack>
+                <Stack direction="row" spacing={1}>
+                <Chip label="Bertutur" onClick={handleClick} size="medium" /> 
+                  <Chip label="Coding" onClick={handleClick} size="medium"/> 
+                  <Chip label="Lukisan" onClick={handleClick} size="medium"/>
+                  <Chip label="Bahasa Melayu" onClick={handleClick} size="medium"/>
+                </Stack>
+                <Stack direction="row" spacing={1}>
+                <Chip label="Bertutur" onClick={handleClick} size="medium"/> 
+                  <Chip label="Coding" onClick={handleClick} size="medium"/> 
+                  <Chip label="Lukisan" onClick={handleClick} size="medium"/>
+                  <Chip label="Bahasa Melayu" onClick={handleClick} size="medium"/>
+                  <Chip label="Kemahiran" onClick={handleClick} size="medium"/> 
+                </Stack>
+              </Stack>
               </Box>
-          </Box>
+              <Box
+                sx={{
+                  width:"80%%",
+                  maxWidth:"100%",
+                  height:"216px",
+                  marginTop:"30px",
+                  position:"relative",
+                  bgcolor:"#66B2FF",
+                  //textAlign:"center"
+                  
+                }}>
+                    <img src={Image_progress} 
+                    style={{
+                       width: '150px',
+                       height: '150px',
+                       position: 'absolute',
+                       bottom:'0',
+                       right:'50%',
+                       }} />
+
+                      <Typography
+                        sx={{
+                          fontSize:'25px',
+                          fontWeight:600,
+                          textAlign:'center',
+                          //margin:'auto',
+                          position:'absolute',
+                          left:'30%',
+                          bottom: '30px',
+                          transform: 'translateX(-50%)'
+                        }}>
+                        Get to know your progress
+                      </Typography>
+                <Box
+                sx={{
+                  width:"100%",
+                  maxWidth:"100%",
+                  height:"216px",
+                  marginTop:"30px",
+                  marginLeft: '50%',
+                  bgcolor:"#3298FF",
+                  transform: 'skewX(-20deg)',
+                  zIndex:-1, 
+                }}>
+                    <img src={Image_testskill} 
+                       style={{
+                       width: '190px',
+                       height: '200px',
+                       position: 'relative',
+                       bottom:'-7.7%',
+                       left:'30%',
+                       transform: 'skewX(20deg)',
+                       }}/>
+              </Box>
+              </Box>
+          </Grid>
       </Grid>
     </Box>
   </div>

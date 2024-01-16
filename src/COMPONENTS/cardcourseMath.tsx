@@ -30,15 +30,17 @@ const CardcoursesMath = () => {
         </Typography> */}
       </CardContent>
       <CardActions>
-        <Button 
+      <Button 
         variant="outlined"
         size="small"
         sx={{
-            marginTop:'120px',
+            marginTop:'60px',
+            width:"90px",
+            height:"40px",
             backgroundColor:"#F8F8F8",
             color:"#000000", 
-            borderColor:"#C6C6C6"
-                
+            borderColor:"#C6C6C6",
+            whiteSpace:"nowrap"    
         }}
         >More Info
         </Button>
@@ -46,9 +48,12 @@ const CardcoursesMath = () => {
         size="small"
         variant="contained"
         sx={{
-            marginTop:'120px',
-            marginLeft: '150px',
+            width:"120px",
+            height:"40px",
+            marginTop:'60px',
+            marginLeft: '90px',
             backgroundColor:"#009B5D",
+            whiteSpace:"nowrap"
             
         }}
         >
