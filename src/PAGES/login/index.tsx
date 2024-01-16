@@ -26,14 +26,14 @@ import { setUserToken } from '../../SERVICES/sessions';
 import { passwordValidator } from '../../UTILS/input-validator';
 import SocialLogin from '../register/component/social-login';
 import logo_Xcelearn from '../../ASSETS/Logo_Xcelearn.png';
-import logo_main from '../../ASSETS/Logo_main.png';
+// import logo_main from '../../ASSETS/Logo_main.png';
 import signin_logo from '../../ASSETS/Signin_logo.svg';
 import { axios_login, axios_loginByToken } from './axios';
 const LoginPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
-  const [registerMode, setRegisterMode] = useState(false);
+  // const [registerMode, setRegisterMode] = useState(false);
 
   const [values, setValues]: any = useState({
     email: '',

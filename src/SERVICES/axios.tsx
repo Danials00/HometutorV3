@@ -24,7 +24,7 @@ export const axios = async (
     }
   }
 
-  return await new Promise<string>(async (resolve, reject: any) => {
+  return await new Promise<string>(async (resolve) => {
     return ax(config)
       .then(function (response: AxiosResponse) {
         resolve(response.data);

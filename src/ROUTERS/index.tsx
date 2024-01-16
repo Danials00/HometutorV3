@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 import {Route, Routes } from 'react-router-dom';
 
 import ScrollToTop from '../UTILS/scroll-to-top';
-import { CheckPrivateRoute, PrivateRoute } from './private-route';
+
 
 
 const Login = lazy(() => import('../PAGES/login/index'));

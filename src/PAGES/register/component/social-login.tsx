@@ -1,5 +1,5 @@
 
-import { Backdrop, Button, Grid } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import { memo } from 'react';
 
 // Import the PNG images

@@ -1,6 +1,6 @@
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 declare module '@mui/material/styles' {
   interface Palette {
@@ -21,7 +21,6 @@ declare module '@mui/material/Button' {
 }
 
 export default function ThemeManager(props: any) {
-  const dispatch = useDispatch();
   const { app } = useSelector((state: any) => state);
   // A custom theme for this app
   const isDarkTheme = app.is_dark_theme;

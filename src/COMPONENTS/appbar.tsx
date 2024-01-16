@@ -22,8 +22,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const pages = ['Products', 'Pricing', 'Blog'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
 const appbar = () => {
@@ -77,8 +77,8 @@ const appbar = () => {
         },
       }));
 
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const [, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const [, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -87,37 +87,37 @@ const appbar = () => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
-  const handleHomeClick = () => {
-    // Handle Home icon click
-    console.log('Home icon clicked');
-  };
+  // const handleHomeClick = () => {
+  //   // Handle Home icon click
+  //   console.log('Home icon clicked');
+  // };
 
-  const handleYouTubeClick = () => {
-    // Handle YouTube icon click
-    console.log('YouTube icon clicked');
-  };
+  // const handleYouTubeClick = () => {
+  //   // Handle YouTube icon click
+  //   console.log('YouTube icon clicked');
+  // };
 
-  const handleFolderClick = () => {
-    // Handle Folder icon click
-    console.log('Folder icon clicked');
-  };
+  // const handleFolderClick = () => {
+  //   // Handle Folder icon click
+  //   console.log('Folder icon clicked');
+  // };
 
-  const handleGroupsClick = () => {
-    // Handle Groups icon click
-    console.log('Groups icon clicked');
-  };
+  // const handleGroupsClick = () => {
+  //   // Handle Groups icon click
+  //   console.log('Groups icon clicked');
+  // };
 
     const [value, setValue] = React.useState(0);
   
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
       setValue(newValue);
     };
  

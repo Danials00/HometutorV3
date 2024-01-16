@@ -1,31 +1,21 @@
-import {memo} from 'react';
 import Appbar from "../../COMPONENTS/appbar";
 import CardcoursesBm from "../../COMPONENTS/cardcourseBm";
 import CardcoursesEng from "../../COMPONENTS/cardcourseEng";
 import CardcoursesMath from "../../COMPONENTS/cardcourseMath";
 import CardcoursesSc from "../../COMPONENTS/cardcourseSc";
-import{ Button, Grid } from '@mui/material';
+import{ Button, Chip, Grid, Stack } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import { alpha, styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import { Box } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
-import React, { Suspense, lazy, useState } from 'react';
+import React, { useState } from 'react';
 import'./index.scss'
 import Banner_Icon from '../../ASSETS/Banner_Icon.png';
-import Home_icon from '../../ASSETS/Home_icon.svg';
-import logo_Xcelearn from '../../ASSETS/Logo_Xcelearn.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/Divider';
-import CardMedia from '@mui/material/CardMedia';
-import Link from '@mui/material/Link';
-import Chip from '@mui/material/Chip';
 
-import Classroom_icon from '../../ASSETS/Courses_Icon/Classroom_icon.jpg';
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
@@ -67,7 +57,7 @@ const homepages = () => {
     color:'#3C3C43',
   }));
 
-  const SearchContainer = styled('div')(({ theme }) => ({
+  const SearchContainer = styled('div')(({ }) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -98,24 +88,13 @@ const homepages = () => {
     },
   }));
 
-  const StyledInputButton = styled(Button)(({ theme }) => ({
-    borderRadius: '20px',
-    position: 'absolute',
-    textTransform: 'none',
-    marginRight: '-100px',
-    right: '105px',
-    marginTop: '2px',
-  }));
 
-  const [keyword, setKeyword]: any = useState('');
+  const []: any = useState('');
 
-  const onKeywordChange = (e: any) => {
-    setKeyword(e.target.value);
-  };
 
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
