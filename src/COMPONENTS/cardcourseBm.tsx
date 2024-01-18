@@ -16,7 +16,7 @@ const CardcoursesBm = () => {
         component="img"
         alt="green iguana"
         height="140"
-        image="../../src/ASSETS/Bm_pic.jpg"
+        image="../../public/Bm_pic.jpg"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

@@ -3,10 +3,10 @@ import { Button, Grid } from '@mui/material';
 import { memo } from 'react';
 
 // Import the PNG images
-import GoogleIcon from '../../../ASSETS/Google_Icon.png';
-import TwitterIcon from '../../../ASSETS/twitter_Icon.png';
-import LinkedInIcon from '../../../ASSETS/linkedin _icon.png';
-import FacebookIcon from '../../../ASSETS/Facebook_Icon.png';
+import GoogleIcon from '../../../../public/Google_Icon.png';
+import TwitterIcon from '../../../../public/Twitter_Icon.png';
+import LinkedInIcon from '../../../../public/Linkedin _Icon.png';
+import FacebookIcon from '../../../../public/Facebook_Icon.png';
 
 const SocialLogin = () => {
   const handleBtn = (type: string) => {

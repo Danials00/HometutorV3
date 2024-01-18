@@ -10,7 +10,7 @@ import Tooltip from '@mui/material/Tooltip';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
-// import signin_logo from '../../src/ASSETS/Logo_Xcelearn_main.png';
+import signin_logo from '../../public/signin_logo.svg';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Stack from '@mui/material/Stack';
 import AppsIcon from '@mui/icons-material/Apps';
@@ -127,9 +127,9 @@ const appbar = () => {
      >
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
-          {/* <Box>
+          <Box>
           <img src={signin_logo} style={{ width: '43x', height: '35px'}} />
-          </Box> */}
+          </Box>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />

@@ -25,9 +25,9 @@ import { handleReqSessionTime } from '../../REDUX/reducer_user';
 import { setUserToken } from '../../SERVICES/sessions';
 import { passwordValidator } from '../../UTILS/input-validator';
 import SocialLogin from '../register/component/social-login';
-import logo_Xcelearn from '../../ASSETS/Logo_Xcelearn.png';
+import logo_Xcelearn from '../../../public/Logo_Xcelearn.png';
 // import logo_main from '../../ASSETS/Logo_main.png';
-//import signin_logo from '../../ASSETS/Signin_logo.svg';
+import signin_logo from '../../../public/signin_logo.svg';
 import { axios_login, axios_loginByToken } from './axios';
 const LoginPage = () => {
   const dispatch = useDispatch();
@@ -158,9 +158,9 @@ const LoginPage = () => {
         <img src={logo_Xcelearn} style={{ width: '160px', height: '37px', marginTop:'20px', marginLeft: '25px'}} />
       </Box>
       <Box sx={{ textAlign:'inherit',width: '500%', maxWidth: '500px', height: '500px', marginTop:'150px', marginLeft: 'none'}}>
-        {/* <Box>
+        <Box>
         <img src={signin_logo} style={{ width: '200px', height: '240px', marginTop:'25px', marginLeft: '1px'}} />
-       </Box> */}
+       </Box>
         <Typography sx={{fontfamily: 'Folio Extra Bold'}}
         style={headline2}
         variant='h2'>

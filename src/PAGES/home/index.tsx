@@ -12,7 +12,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import React, { useState } from 'react';
 import'./index.scss'
-import Banner_Icon from '../../ASSETS/Banner_Icon.png';
+import Banner_Icon from '../../../public/Banner_Icon.png';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
@@ -24,8 +24,8 @@ import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import GroupsIcon from '@mui/icons-material/Groups';
 import TableChartIcon from '@mui/icons-material/TableChart';
-import Image_progress from '../../ASSETS/Image_progress.png';
-import Image_testskill from '../../ASSETS/Image_testskill.png';
+import Image_progress from '../../../public/Image_progress.png';
+import Image_testskill from '../../../public/Image_testskill.png';
 
 
 const homepages = () => {
