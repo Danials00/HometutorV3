@@ -127,9 +127,9 @@ const appbar = () => {
      >
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
-          <Box>
+          {/* <Box>
           <img src={signin_logo} style={{ width: '43x', height: '35px'}} />
-          </Box>
+          </Box> */}
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
