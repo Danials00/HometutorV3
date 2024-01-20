@@ -17,7 +17,7 @@ const CardcoursesSc = () => {
         component="img"
         alt="green iguana"
         height="140"
-        image="../../public/Science_pic.jpg"
+        image="../../public/Science_pic.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
