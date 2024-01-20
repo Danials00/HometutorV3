@@ -5,7 +5,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Science_pic from '../../public/Science_pic.png'
-import { ScienceOutlined } from '@mui/icons-material';
 
 const CardcoursesSc = () => {
     return(
