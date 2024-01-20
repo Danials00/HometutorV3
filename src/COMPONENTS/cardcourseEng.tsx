@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import English_pic from '../../public/English_pic.jpg';
 
 const CardcoursesEng = () => {
     return(
@@ -17,7 +17,7 @@ const CardcoursesEng = () => {
         component="img"
         alt="green iguana"
         height="140"
-        image="../../public/English_pic.jpg"
+        image={English_pic}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
