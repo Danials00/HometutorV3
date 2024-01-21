@@ -36,9 +36,10 @@ const SocialLogin = () => {
     spacing={1}
     justifyContent="center"
     alignItems="center"
+    //marginTop="50px"
 
     >
-      <Grid item xs={2} sm={2} md={1} xl={2}
+      <Grid 
       >
         <Button
           onClick={() => handleBtn('google')}
@@ -49,7 +50,7 @@ const SocialLogin = () => {
         </Button>
       </Grid>
       {/* Add similar Button components for other social logins */}
-      <Grid item xs={2} sm={2} md={1} xl={2}>
+      <Grid >
         <Button
           onClick={() => handleBtn('facebook')}
           fullWidth
@@ -57,7 +58,7 @@ const SocialLogin = () => {
         >   
         </Button>
       </Grid>
-      <Grid item xs={2} sm={2} md={1} xl={2}>
+      <Grid >
         <Button
           onClick={() => handleBtn('twitter')}
           fullWidth
@@ -65,7 +66,7 @@ const SocialLogin = () => {
         >
         </Button>
       </Grid>
-      <Grid item xs={2} sm={2} md={1} xl={2}>
+      <Grid >
         <Button
           onClick={() => handleBtn('linkedin')}
           fullWidth
