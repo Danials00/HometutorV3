@@ -86,7 +86,6 @@ const themeColor:ThemeColor = {
 }
 
 
-
 return (
   <ThemeProvider theme={getTheme(value)}> 
   <Grid container style={{ minHeight: '100vh', overflowY: 'hidden'
