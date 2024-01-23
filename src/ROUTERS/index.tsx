@@ -8,6 +8,7 @@ import ScrollToTop from '../UTILS/scroll-to-top';
 
 const Login = lazy(() => import('../PAGES/login/index'));
 const Home = lazy(()=> import('../PAGES/home/index'));
+const Register = lazy(()=> import('../PAGES/register/index'));
 
 function MainRouter() {
     return (
@@ -32,6 +33,12 @@ function MainRouter() {
               path='/home'
               element={
                 <Home />
+              }
+            />
+            <Route
+              path='/register'
+              element={
+                <Register />
               }
 />           
         </Routes>

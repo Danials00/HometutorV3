@@ -396,6 +396,7 @@ const LoginPage = () => {
               <Box sx={{ mt: 2 }}>
                 <LoadingButton
                   loading={isLoading}
+                  onClick={() =>('/home')}
                   // disabled={isLoading}
                   type='submit'
                   fullWidth
@@ -405,6 +406,8 @@ const LoginPage = () => {
                     padding: '12px',
                     backgroundColor: '#0197D6',
                   }}
+                  component={NavLink}
+                  to='/home'
                 >
                   Sign In
                 </LoadingButton>
