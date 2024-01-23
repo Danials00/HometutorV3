@@ -1,6 +1,4 @@
-import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useDispatch, useSelector } from 'react-redux';
+import { createTheme } from '@mui/material/styles';
 
 const studentTheme = createTheme({
   palette: {
